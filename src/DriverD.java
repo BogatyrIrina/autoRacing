@@ -1,7 +1,7 @@
-public class DriverC extends Driver<Bus> {
+public class DriverD extends Driver<Truck> {
 
-    public DriverC(String firstName, String middleName, String lastName, boolean drivingLicense, int experience,
-                   Bus vehicle) {
+    public DriverD(String firstName, String middleName, String lastName, boolean drivingLicense, int experience,
+                   Truck vehicle) {
         super(firstName, middleName, lastName, drivingLicense, experience, vehicle);
     }
     public void startMoving() {

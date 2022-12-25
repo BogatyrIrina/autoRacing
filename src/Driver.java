@@ -54,9 +54,4 @@ public class Driver<T extends Transport> {
     public void refuelVehicle(){
         System.out.println("Заправить транспортное средство.");
     }
-
-    public void printDriverVehicle() {
-        System.out.printf("Водитель " + getFirstName() + getMiddleName() + getLastName() +
-                " управляет транспортирным средством " + getVehicle());
-    }
 }

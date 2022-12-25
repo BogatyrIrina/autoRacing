@@ -21,32 +21,19 @@ public abstract class Transport {
             this.brand = brand;
         } else {
             this.brand = "default";
-
-            if (model == null) {
-                this.model = "default";
-            } else {
-                this.model = model;
-            }
-
-            this.engineCapacity = engineCapacity;
         }
+        if (model == null) {
+            this.model = "default";
+        } else {
+            this.model = model;
+        }
+        this.engineCapacity = engineCapacity;
     }
 
     public abstract void startMoving();
 
     public abstract void finishMoving();
 
-    void pitStop() {
-        System.out.println("Остановиться, заправиться.");
-    }
-
-    void bestLapTime() {
-        System.out.println("Показать лучшее время круга");
-    }
-
-    void maxSpeed() {
-        System.out.println("Показать максимальную скорость.");
-    }
 
 
 }
