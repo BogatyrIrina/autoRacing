@@ -1,7 +1,7 @@
 public abstract class Transport {
-    protected String brand;
-    protected String model;
-    protected double engineCapacity;
+    private String brand;
+    private String model;
+    private double engineCapacity;
 
     public String getBrand() {
         return brand;
